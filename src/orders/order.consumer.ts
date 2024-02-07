@@ -17,7 +17,7 @@ export class OrderConsumer {
   @RabbitSubscribe({
     exchange: 'amq.direct',
     routingKey: 'PaymantDone',
-    queue: 'micro-orders',
+    queue: 'payments',
   })
   async consume(msg: { order_id: string; status: OrderStatus }) {
     try {
