@@ -18,7 +18,7 @@ import { RabbitmqModule } from './rabbitmq/rabbitmq.module';
       port: 3307,
       username: 'root',
       password: 'root',
-      database: 'nest',
+      database: 'ecommerce',
       entities: [Product, Order, OrderItem],
       synchronize: true,
       logging: true,
